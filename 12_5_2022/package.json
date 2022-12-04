@@ -1,0 +1,19 @@
+{
+  "name": "jsproblem12520222",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest --run --reporter verbose",
+    "test:watch": "vitest",
+    "mild-test": "vitest mild.test.js --run --reporter verbose",
+    "medium-test": "vitest medium.test.js --run --reporter verbose",
+    "hot-test": "vitest hot.test.js --run --reporter verbose",
+    "diablo-test": "vitest diablo.test.js --run --reporter verbose"
+  },
+  "type": "module",
+  "devDependencies": {
+    "vitest": "^0.25.3"
+  }
+}
+
