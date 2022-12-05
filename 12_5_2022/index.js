@@ -66,69 +66,27 @@ const employees = [
   Throw an error message that says 'There are no employees.' if the array is empty.
   Throw an error message that says 'Not all employees have jobs' if the array has a 'job' property on each object.
 */
-const reverseSort = (data) => {
-  if (!data.length) {
-    throw new Error('There are no employees.');
-  }
-  if (!data.every((employee) => employee.job)) {
-    throw new Error('There are no employees.');
-  }
-  return data.sort((a, z) => {
-    if (a.name < z.name) {
-      return 1;
-    }
-    if (a.name > z.name) {
-      return -1;
-    }
-    return 0;
-  });
-};
-// console.log(reverseSort(employees.slice()));
 
 /*  
   Create a function called: over100k.
   You must return the employees names whose salary is over 100k.
 */
-const over100k = (data) =>
-  data.filter((employee) => employee.salary >= 100000).map((emp) => emp.name);
-// console.log(over100k(employees));
 
 /*  
   Create a function called: findJrDev.
   You must return the employee that has a job title of 'Junior Developer'
 */
-const findJrDev = (data) =>
-  data.find((employee) => employee.job === 'Junior Developer');
-// console.log(findJrDev(employees));
 
 /*  
   Create a function called: findAvgSalary.
   You must return the average salary among all employees rounded to the nearest hundredths;
 */
-const findAvgSalary = (data) =>
-  +(
-    Object.keys(data).reduce((sum, key) => {
-      return sum + data[key].salary;
-    }, 0) / data.length
-  ).toFixed(2);
-// console.log(findAvgSalary(employees));
 
 /*  
   Create a function called: sortBySalary.
   You must return all the employees but sorted by:
   SMALLEST TO LARGEST SALARY;
 */
-const sortBySalary = (data) =>
-  data.sort((a, z) => {
-    if (a.salary < z.salary) {
-      return -1;
-    }
-    if (a.salary > z.salary) {
-      return 1;
-    }
-    return 0;
-  });
-// console.log(sortBySalary(employees.slice()));
 
 /*  
   Create a function called: addBonus.
@@ -138,17 +96,3 @@ const sortBySalary = (data) =>
   If they have a salary equal to or more than 100k:
     return a bonus that is 10% of their salary (rounded to the hundredths place)
 */
-const addBonus = (data) =>
-  data.map((employee) => {
-    if (employee.salary < 100000) {
-      return {
-        ...employee,
-        bonus: +(employee.salary * 0.05).toFixed(2),
-      };
-    }
-    return {
-      ...employee,
-      bonus: +(employee.salary * 0.1).toFixed(2),
-    };
-  });
-// console.log(addBonus(employees));

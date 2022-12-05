@@ -7,4 +7,6 @@
    1. For example: You need to create specific named functions.
 5. To **RUN** your code: You must type in terminal (as long as your in the correct folder -> 12_5_2022): node index
 
-6. To **TEST** your code: You must type in terminal: 4. All Tests: **npm test** 5. Tests run after every save: **npm run test:watch**
+6. To **TEST** your code: You must type in terminal:
+   1. All Tests: **npm test**
+   2. Tests run after every save: **npm run test:watch**
