@@ -1,0 +1,15 @@
+{
+  "name": "jsproblem12520222",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest --run --reporter verbose",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@types/readline-sync": "^1.4.4",
+    "vitest": "^0.25.3"
+  }
+}
