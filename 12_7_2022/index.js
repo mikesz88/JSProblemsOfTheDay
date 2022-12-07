@@ -74,5 +74,5 @@ const barrySanders = [
 
 /*
   Create a function named 'sortBySuggestion' where
-  told 'small' or 'big', you sort the players stats accordingly.
+  told 'small' or 'big', you sort the players game yards accordingly.
 */
