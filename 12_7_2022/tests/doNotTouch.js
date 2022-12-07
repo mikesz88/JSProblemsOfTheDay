@@ -1,4 +1,4 @@
-export const yardsPerGame = [
+export const emmittSmith = [
   { game: 1, carries: 12, yards: 48 },
   { game: 2, carries: 22, yards: 129 },
   { game: 3, carries: 29, yards: 148 },
@@ -18,7 +18,7 @@ export const yardsPerGame = [
   { game: 17, carries: 27, yards: 153 },
 ];
 
-export const smallToBig = [
+export const esmallToBig = [
   { game: 14, carries: 7, yards: 27 },
   { game: 9, carries: 5, yards: 37 },
   { game: 1, carries: 12, yards: 48 },
@@ -37,7 +37,7 @@ export const smallToBig = [
   { game: 17, carries: 27, yards: 153 },
   { game: 16, carries: 24, yards: 187 },
 ];
-export const bigToSmall = [
+export const ebigToSmall = [
   { game: 16, carries: 24, yards: 187 },
   { game: 17, carries: 27, yards: 153 },
   { game: 3, carries: 29, yards: 148 },
@@ -55,4 +55,64 @@ export const bigToSmall = [
   { game: 1, carries: 12, yards: 48 },
   { game: 9, carries: 5, yards: 37 },
   { game: 14, carries: 7, yards: 27 },
+];
+
+export const barrySanders = [
+  { game: 1, carries: 22, yards: 96 },
+  { game: 2, carries: 21, yards: 159 },
+  { game: 3, carries: 15, yards: 75 },
+  { game: 4, carries: 19, yards: 69 },
+  { game: 5, carries: 37, yards: 113 },
+  { game: 6, carries: 14, yards: 74 },
+  { game: 7, carries: 19, yards: 99 },
+  { game: 8, carries: 27, yards: 54 },
+  { game: 9, carries: 9, yards: 51 },
+  { game: 10, carries: 11, yards: 77 },
+  { game: 11, carries: 20, yards: 110 },
+  { game: 12, carries: 25, yards: 125 },
+  { game: 13, carries: 7, yards: 74 },
+  { game: 14, carries: 12, yards: 64 },
+  { game: 15, carries: 5, yards: 51 },
+  { game: 16, carries: 14, yards: 97 },
+  { game: 17, carries: 35, yards: 191 },
+];
+
+export const bSmallToBig = [
+  { game: 9, carries: 9, yards: 51 },
+  { game: 15, carries: 5, yards: 51 },
+  { game: 8, carries: 27, yards: 54 },
+  { game: 14, carries: 12, yards: 64 },
+  { game: 4, carries: 19, yards: 69 },
+  { game: 6, carries: 14, yards: 74 },
+  { game: 13, carries: 7, yards: 74 },
+  { game: 3, carries: 15, yards: 75 },
+  { game: 10, carries: 11, yards: 77 },
+  { game: 1, carries: 22, yards: 96 },
+  { game: 16, carries: 14, yards: 97 },
+  { game: 7, carries: 19, yards: 99 },
+  { game: 11, carries: 20, yards: 110 },
+  { game: 5, carries: 37, yards: 113 },
+  { game: 12, carries: 25, yards: 125 },
+  { game: 2, carries: 21, yards: 159 },
+  { game: 17, carries: 35, yards: 191 },
+];
+
+export const bBigToSmall = [
+  { game: 17, carries: 35, yards: 191 },
+  { game: 2, carries: 21, yards: 159 },
+  { game: 12, carries: 25, yards: 125 },
+  { game: 5, carries: 37, yards: 113 },
+  { game: 11, carries: 20, yards: 110 },
+  { game: 7, carries: 19, yards: 99 },
+  { game: 16, carries: 14, yards: 97 },
+  { game: 1, carries: 22, yards: 96 },
+  { game: 10, carries: 11, yards: 77 },
+  { game: 3, carries: 15, yards: 75 },
+  { game: 6, carries: 14, yards: 74 },
+  { game: 13, carries: 7, yards: 74 },
+  { game: 4, carries: 19, yards: 69 },
+  { game: 14, carries: 12, yards: 64 },
+  { game: 8, carries: 27, yards: 54 },
+  { game: 9, carries: 9, yards: 51 },
+  { game: 15, carries: 5, yards: 51 },
 ];
