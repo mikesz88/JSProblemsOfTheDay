@@ -42,100 +42,37 @@ const barrySanders = [
   Create a function named 'totalYards' where 
   you show the sum of all the yards.
 */
-const totalYards = (gameLogs) =>
-  Object.keys(gameLogs).reduce((sum, key) => {
-    return sum + gameLogs[key].yards;
-  }, 0);
-console.log(totalYards(barrySanders));
 
 /*
   Create a function named 'gamesOverOrEqual100' where
   you list the game numbers the player reached 100 or greater
 */
-const gamesOverOrEqual100 = (gameLogs) =>
-  gameLogs.filter((game) => game.yards >= 100).map((game) => game.game);
-console.log(gamesOverOrEqual100(barrySanders));
 
 /*
   Create a function named 'avgYardsPerCarry' where
   you are given the amount of games from the start
   you want to average the amount of yards per carry. 
 */
-const avgYardsPerCarry = (amountOfGames = 17, gameLogs) =>
-  +(
-    gameLogs
-      .filter((game) => game.game <= amountOfGames)
-      .map((game) => game.yards)
-      .reduce((a, b) => a + b, 0) / amountOfGames
-  ).toFixed(2);
-console.log(avgYardsPerCarry(10, barrySanders));
 
 /*
   Create a function named 'carries10YardsOver50' where
   you return a boolean whether the player reached at least 50 yards in
   every game he has 10 carries or less. 
 */
-const carries10YardsOver50 = (gameLogs) =>
-  gameLogs
-    .filter((game) => game.carries <= 10)
-    .map((game) => game.yards)
-    .every((yards) => yards >= 50);
-console.log(carries10YardsOver50(barrySanders));
 
 /*
   Create a function named 'badGame' where
   you return a boolean whether the player 
   never went over 50 yards.
 */
-const badGame = (gameLogs) => gameLogs.some((game) => game.yards <= 50);
-console.log(badGame(barrySanders));
 
 /*
   Create a function named 'gamesOverAverage' where
   you give a count of how many games did the player
   beat or pass his yards per game average.
 */
-const gamesOverAverage = (gameLogs) =>
-  gameLogs.filter(
-    (game) =>
-      game.yards >=
-      +(
-        Object.keys(gameLogs).reduce(
-          (sum, key) => sum + gameLogs[key].yards,
-          0
-        ) / gameLogs.length
-      ).toFixed(2)
-  ).length;
-
-console.log(gamesOverAverage(barrySanders));
-
-const smallToBig = (gameLogs) =>
-  gameLogs.sort((a, b) => {
-    if (a.yards < b.yards) {
-      return -1;
-    }
-    if (a.yards > b.yards) {
-      return 1;
-    }
-    return 0;
-  });
-
-const bigToSmall = (gameLogs) =>
-  gameLogs.sort((a, b) => {
-    if (a.yards < b.yards) {
-      return 1;
-    }
-    if (a.yards > b.yards) {
-      return -1;
-    }
-    return 0;
-  });
 
 /*
   Create a function named 'sortBySuggestion' where
   told 'small' or 'big', you sort the players stats accordingly.
 */
-const sortBySuggestion = (sort, gameLogs) =>
-  sort === 'small' ? smallToBig(gameLogs) : bigToSmall(gameLogs);
-console.log(sortBySuggestion('small', barrySanders.slice()));
-console.log(sortBySuggestion('big', barrySanders.slice()));
