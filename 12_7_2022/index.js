@@ -49,9 +49,9 @@ const barrySanders = [
 */
 
 /*
-  Create a function named 'avgYardsPerCarry' where
+  Create a function named 'avgYardsPerGame' where
   you are given the amount of games from the start
-  you want to average the amount of yards per carry. 
+  you want to average the amount of yards per game. 
 */
 
 /*

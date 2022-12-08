@@ -65,22 +65,22 @@ describe('gamesOverOrEqual100()', () => {
   });
 });
 
-describe('avgYardsPerCarry()', () => {
-  let avgYardsPerCarryFn;
+describe('avgYardsPerGame()', () => {
+  let avgYardsPerGameFn;
   beforeEach(() => {
     eval(`
       ${fileText};
-      avgYardsPerCarryFn = avgYardsPerCarry
+      avgYardsPerGameFn = avgYardsPerGame
     `);
   });
 
-  it('should have a function named avgYardsPerCarry()', () => {
-    const avgYardsPerCarry = eval(`${fileText}; avgYardsPerCarry`);
-    expect(avgYardsPerCarry).toBeInstanceOf(Function);
+  it('should have a function named avgYardsPerGame()', () => {
+    const avgYardsPerGame = eval(`${fileText}; avgYardsPerGame`);
+    expect(avgYardsPerGame).toBeInstanceOf(Function);
   });
 
   it("should return which games Emmitt Smith's reached 100 or more.", () => {
-    const result = avgYardsPerCarryFn(10, emmittSmith);
+    const result = avgYardsPerGameFn(10, emmittSmith);
     expect(result).toBe(88.2);
   });
 
