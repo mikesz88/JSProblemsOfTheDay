@@ -40,40 +40,40 @@ const barrySanders = [
 
 /*
   Create a function named 'totalYards' where 
-  you show the sum of all the yards.
+  you show the sum of all the yards by any player.
 */
 
 /*
   Create a function named 'gamesOverOrEqual100' where
-  you list the game numbers the player reached 100 or greater
+  you list the game numbers any given player reached 100 or greater
 */
 
 /*
   Create a function named 'avgYardsPerGame' where
   you are given the amount of games from the start
-  you want to average the amount of yards per game. 
+  you want to average the amount of yards per game for any given player. 
 */
 
 /*
   Create a function named 'carries10YardsOver50' where
-  you return a boolean whether the player reached at least 50 yards in
+  you return a boolean whether any player given reached at least 50 yards in
   every game he has 10 carries or less. 
 */
 
 /*
   Create a function named 'badGame' where
-  you return a boolean whether the player 
+  you return a boolean whether any player given 
   never went over 50 yards.
 */
 
 /*
   Create a function named 'gamesOverAverage' where
-  you give a count of how many games did the player
+  you give a count of how many games did any player given
   beat or pass his yards per game average.
 */
 
 /*
   Create a function named 'sortBySuggestion' where
   told 'small' (small to big) or 'big' (big to small), 
-  you sort the players game yards.
+  you sort any players given game yards.
 */
