@@ -79,13 +79,13 @@ describe('avgYardsPerGame()', () => {
     expect(avgYardsPerGame).toBeInstanceOf(Function);
   });
 
-  it("should return which games Emmitt Smith's reached 100 or more.", () => {
+  it("should return return the average yards per game of Emmitt Smith.", () => {
     const result = avgYardsPerGameFn(10, emmittSmith);
     expect(result).toBe(88.2);
   });
 
-  it("should return which games Barry Sander's reached 100 or more.", () => {
-    const result = avgYardsPerCarryFn(10, barrySanders);
+  it("should return the average yards per game of Barry Sanders.", () => {
+    const result = avgYardsPerGameFn(10, barrySanders);
     expect(result).toBe(86.7);
   });
 });
