@@ -25,7 +25,7 @@ describe('addNumbersAbove100()', () => {
     `);
   });
 
-  it('should return the parameter object with a new property of a favorite with a false values', () => {
+  it('should return the sum of all numbers greater than or equal to 100', () => {
     const array = [20, 200, 50, 400, 100];
     const result = addNumbersAbove100Fn(array);
     expect(result).toEqual(700);

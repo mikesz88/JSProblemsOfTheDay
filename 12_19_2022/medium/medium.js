@@ -20,6 +20,7 @@ const countAllS = (string) => {
 };
 
 countAllS('michael SancheS ss She best.');
+countAllS("Cost is misleading. That's just wrong and rightous.");
 // Finish this up with more examples.
 // Create the tests for this.
 // Still need to make the hot
