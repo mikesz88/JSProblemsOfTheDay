@@ -137,23 +137,3 @@ const otherProfiles = [
 ];
 
 // Write your code below
-const ageSort = (profiles, sort) => {
-  if (sort) {
-    return profiles.sort((a, z) => {
-      if (a.age < z.age) {
-        return -1;
-      } else if (a.age > z.age) {
-        return 1;
-      }
-      return 0;
-    });
-  }
-  return profiles.sort((a, z) => {
-    if (a.age < z.age) {
-      return 1;
-    } else if (a.age > z.age) {
-      return -1;
-    }
-    return 0;
-  });
-};

@@ -3,7 +3,7 @@
   2. The function will receive an argument of an array of numbers
   3. return a number that is the sum of all the numbers in the 
   array that are greater than or equal to 100!
+  Example: [20, 200, 50, 400, 100] should return 700
 */
 
-const addNumbersAbove100 = (array) =>
-  array.filter((num) => num >= 100).reduce((a, b) => a + b);
+// Write your code below
