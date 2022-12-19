@@ -1,29 +1,159 @@
 /*
-  Your goal is to convert a sentence into pig latin.
-  You must create functions: 1. pigLatinTranslator 2. translate
-  To convert a sentence into pig latin you must follow these rules:
-  1. If a word starts with a consonant and a vowel,
-    put the first letter of the word at the end of the word
-    and add "ay." ...
-  2. If a word starts with two consonants
-    move the two consonants to the end of the word
-    and add "ay." ...
-  3. If a word starts with a vowel add the word "way"
-    at the end of the word
-
-  The expectation of the translate function is to:
-  - convert any word and translate it into pig latin
-  (The rules!)
-
-  Do not forget to capitalize the first word of a sentence!
-  Do not forget to check if the parameter is a string!
-
-  With that said: It be VERY WISE TO USE THE 
-  TRANSLATE FUNCTION IN YOUR PIG LATIN TRANSLATOR
-
-  Example: 
-  - PigLatinTranslator: Input: 'What are you doing later' Output: 'Atwhay areway ouyay oingday aterlay'
-  - translate: input: 'answer' output: 'answerway'
+  1. Write a function called: ageSort
+  2. The function has two arguments:
+    a.) first argument: that is an array of profiles
+    b.) second argument is a string that is boolean
+      (when true: sort youngest to oldest. false: oldest to youngest )
+  3. Sort according to the age property
+  4. You return the array of profiles sorted by argument
   */
 
+// Use this object as example of profiles
+const profiles = [
+  {
+    firstName: 'Test1',
+    lastName: 'User1',
+    age: 25,
+    job: 'None of your business',
+  },
+  {
+    firstName: 'Test2',
+    lastName: 'User2',
+    age: 12,
+    job: 'None of your business',
+  },
+  {
+    firstName: 'Test3',
+    lastName: 'User3',
+    age: 52,
+    job: 'None of your business',
+  },
+  {
+    firstName: 'Test4',
+    lastName: 'User4',
+    age: 73,
+    job: 'None of your business',
+  },
+  {
+    firstName: 'Test5',
+    lastName: 'User5',
+    age: 24,
+    job: 'None of your business',
+  },
+  {
+    firstName: 'Test6',
+    lastName: 'User6',
+    age: 19,
+    job: 'None of your business',
+  },
+  {
+    firstName: 'Test7',
+    lastName: 'User7',
+    age: 87,
+    job: 'None of your business',
+  },
+  {
+    firstName: 'Test8',
+    lastName: 'User8',
+    age: 5,
+    job: 'None of your business',
+  },
+  {
+    firstName: 'Test9',
+    lastName: 'User9',
+    age: 14,
+    job: 'None of your business',
+  },
+  {
+    firstName: 'Test10',
+    lastName: 'User10',
+    age: 52,
+    job: 'None of your business',
+  },
+];
+
+// This is another example of profiles
+const otherProfiles = [
+  {
+    firstName: 'Test99',
+    lastName: 'User99',
+    age: 98,
+    job: 'None of your business',
+  },
+  {
+    firstName: 'Test98',
+    lastName: 'User98',
+    age: 99,
+    job: 'None of your business',
+  },
+  {
+    firstName: 'Test97',
+    lastName: 'User97',
+    age: 37,
+    job: 'None of your business',
+  },
+  {
+    firstName: 'Test96',
+    lastName: 'User96',
+    age: 29,
+    job: 'None of your business',
+  },
+  {
+    firstName: 'Test95',
+    lastName: 'User95',
+    age: 22,
+    job: 'None of your business',
+  },
+  {
+    firstName: 'Test94',
+    lastName: 'User94',
+    age: 64,
+    job: 'None of your business',
+  },
+  {
+    firstName: 'Test93',
+    lastName: 'User93',
+    age: 37,
+    job: 'None of your business',
+  },
+  {
+    firstName: 'Test92',
+    lastName: 'User92',
+    age: 53,
+    job: 'None of your business',
+  },
+  {
+    firstName: 'Test91',
+    lastName: 'User91',
+    age: 41,
+    job: 'None of your business',
+  },
+  {
+    firstName: 'Test90',
+    lastName: 'User90',
+    age: 2,
+    job: 'None of your business',
+  },
+];
+
 // Write your code below
+const ageSort = (profiles, sort) => {
+  if (sort) {
+    return profiles.sort((a, z) => {
+      if (a.age < z.age) {
+        return -1;
+      } else if (a.age > z.age) {
+        return 1;
+      }
+      return 0;
+    });
+  }
+  return profiles.sort((a, z) => {
+    if (a.age < z.age) {
+      return 1;
+    } else if (a.age > z.age) {
+      return -1;
+    }
+    return 0;
+  });
+};

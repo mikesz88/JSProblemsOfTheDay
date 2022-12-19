@@ -1,7 +1,7 @@
 **Directions**
 
 1. Have Node installed on your computer.
-2. When you open to the folder, please run **npm install**
+2. When you open (cd'd) to the folder, please run **npm install**
 3. Work incrementally from Mild to Hot.
 4. Please read the **commented out directions** to know what you are supposed to create.
    1. For example: You need to create specific named functions.
