@@ -51,6 +51,50 @@ export const employees = [
   },
 ];
 
+export const employeesNoJob = [
+  {
+    name: 'Michael',
+    salary: 500000,
+  },
+  {
+    name: 'Lisa',
+    salary: 200000,
+  },
+  {
+    name: 'Lily',
+    job: 'CTO',
+    salary: 150000,
+  },
+  {
+    name: 'Mila',
+    salary: 89975,
+  },
+  {
+    name: 'Remi',
+    salary: 75000,
+  },
+  {
+    name: 'Kenzie',
+    salary: 50499,
+  },
+  {
+    name: 'Alec',
+    salary: 35499,
+  },
+  {
+    name: 'Emma',
+    salary: 35499,
+  },
+  {
+    name: 'Missy',
+    salary: 250000,
+  },
+  {
+    name: 'Nico',
+    salary: 170000,
+  },
+];
+
 export const reverseAZ = [
   { name: 'Remi', job: 'Lead Developer', salary: 75000 },
   { name: 'Nico', job: 'Product Owner', salary: 170000 },

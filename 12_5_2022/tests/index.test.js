@@ -3,6 +3,7 @@ import { readFileSync } from 'fs';
 import {
   employees,
   reverseAZ,
+  employeesNoJob,
   over100kEmployees,
   salaryLeastToGreatest,
   bonusesAdded,
@@ -56,6 +57,16 @@ describe('reverseSort()', () => {
   it('should reverse alphabetize the employee list', () => {
     const result = reverseSortFn(employees.slice());
     expect(result).toStrictEqual(reverseAZ);
+  });
+
+  it('should throw an error when array is empty', () => {
+    const result = reverseSortFn([]);
+    expect(result).toThrowError('There are no employees.');
+  });
+
+  it('should throw an error when array of employees does not have a job property', () => {
+    const result = reverseSortFn(employeesNoJob);
+    expect(result).toThrowError('Not all employees have jobs');
   });
 });
 
