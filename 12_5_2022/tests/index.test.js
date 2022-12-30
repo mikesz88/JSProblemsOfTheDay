@@ -59,14 +59,14 @@ describe('reverseSort()', () => {
     expect(result).toStrictEqual(reverseAZ);
   });
 
-  it('should throw an error when array is empty', () => {
-    const result = reverseSortFn([]);
-    expect(result).toThrowError('There are no employees.');
+  it.only('should throw an error when array is empty', () => {
+    expect(() => reverseSortFn([])).toThrowError('There are no employees.');
   });
 
   it('should throw an error when array of employees does not have a job property', () => {
-    const result = reverseSortFn(employeesNoJob);
-    expect(result).toThrowError('Not all employees have jobs');
+    expect(() => reverseSortFn(employeesNoJob)).toThrowError(
+      'Not all employees have jobs'
+    );
   });
 });
 
